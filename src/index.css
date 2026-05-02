@@ -1,0 +1,47 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+}
+
+body {
+  @apply bg-slate-100 text-slate-800 antialiased;
+}
+
+.custom-scrollbar::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  @apply bg-slate-300 rounded-full;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  @apply bg-slate-400;
+}
+
+/* Markdown prose styles override */
+.markdown-body {
+  @apply text-slate-700 leading-relaxed;
+}
+.markdown-body h1, .markdown-body h2, .markdown-body h3, .markdown-body h4 {
+  @apply text-slate-900 mt-8 mb-4 font-bold;
+}
+.markdown-body p {
+  @apply mb-4;
+}
+.markdown-body ul, .markdown-body ol {
+  @apply mb-4 pl-6;
+}
+.markdown-body li {
+  @apply mb-1;
+}
+.markdown-body strong {
+  @apply text-slate-900;
+}

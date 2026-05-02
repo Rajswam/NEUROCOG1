@@ -1,0 +1,6 @@
+{
+  "name": "NeuroClinical AI Companion",
+  "description": "An advanced AI-powered clinical assistant for automated patient case analysis, active inference diagnostics, and 3D visualization of Markov blankets.",
+  "requestFramePermissions": [],
+  "majorCapabilities": []
+}
